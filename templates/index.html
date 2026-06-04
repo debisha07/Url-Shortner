@@ -1,0 +1,33 @@
+<html>
+<head>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+  </head>
+  <body>
+    <h1> Url Shortner </h1>
+<form action = "/main" method="GET">
+     Enter Your  Url  
+    <input type="text" name="user" >  </input>
+ 
+    <button type="submit"> submit </button>
+
+</form>
+<script>
+    function copyUrl() {
+    const url = document.getElementById("shorturl").textContent;
+    navigator.clipboard.writeText(url);
+}
+  </script>
+
+
+{% if result %}
+<div class="show-result">
+    <p>Your shortened URL:</p>
+    <p id="shorturl">{{ result }}</p>
+    <button onclick="copyUrl()"> ✵ Copy </button>
+</div>
+{% endif %}
+
+  </body>
+
+</html>

@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+body {
+    font-family: "Poppins";
+    background-color: #f4f6f9;
+    margin: 0;
+    padding: 40px;
+}
+
+h1 {
+    text-align: center;
+    color: #5C4F4A;
+    font-size : 50px;
+    text-decoration: underline wavy;
+    margin-bottom: 30px;
+}
+
+
+form {
+    background: #EDE9E6;
+    max-width: 600px;
+    margin: auto;
+    padding: 25px;
+    color : #412D15;
+    border-radius: 12px;
+    text-decoration: bold;
+    font-size : 20px;
+    box-shadow: 0 4px 12px 5px rgba(0,0,0,0.1);
+}
+
+input[type="text"] {
+    width: 95%;
+    padding: 12px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #C9996B;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: #5C766D;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #5B7E3C;
+}
+
+
+.show-result {
+    background: #E1DCC9;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.show-result p:first-child {
+    font-weight: bold;
+}
+
+.show-result a,
+.show-result p:last-child {
+    color: #2563eb;
+    word-wrap: break-word;
+    text-decoration: underline;
+}
